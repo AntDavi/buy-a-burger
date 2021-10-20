@@ -8,12 +8,20 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@expo-google-fonts/roboto-mono": "^0.2.0",
     "expo": "~42.0.1",
+    "expo-app-loading": "1.1.2",
+    "expo-font": "~9.2.1",
     "expo-status-bar": "~1.0.4",
+    "lottie-react-native": "4.0.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-hook-form": "^7.17.2",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
-    "react-native-web": "~0.13.12"
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-input-spinner": "^1.7.11",
+    "react-native-web": "~0.13.12",
+    "rn-credit-card": "^1.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

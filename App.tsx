@@ -1,21 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+
+import Home from './src/pages/Home';
+import Payment from './src/pages/Payment';
+import AppLoading from 'expo-app-loading';
+
+import { useFonts } from 'expo-font';
+
+import { RobotoMono_400Regular, RobotoMono_700Bold } from '@expo-google-fonts/roboto-mono'
 
 export default function App() {
+
+  const fonts = useFonts ({
+    RobotoMono_400Regular,
+    RobotoMono_700Bold
+  });
+
+  if(!fonts) {
+    return <AppLoading/>
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Payment />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
