@@ -14,6 +14,9 @@ export default function Payment() {
   function handleCredit() {
     navigation.navigate('cardCredit');
   }
+  function handlePix() {
+    navigation.navigate('Pix');
+  }
 
   return (
     <View style={styles.container}>
@@ -28,6 +31,7 @@ export default function Payment() {
       <View style={styles.buttonsContainer}>
         <PayButton
           title="Pix"
+          onPress={handlePix}
         />
         <PayButton
           title="Cartão"
