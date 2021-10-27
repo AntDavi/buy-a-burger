@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Image } from 'react-native';
 import InputSpinner from "react-native-input-spinner";
 
@@ -18,24 +18,26 @@ export default function Home() {
     navigation.navigate('Payment');
   }
 
+  const [value, setValue] = useState(1)
+  const hamburgerPrice = 13
 
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
 
       <Image source={Burger} />
-      <Price price="R$ 13,00"/>
+      <Price priceHam={value * hamburgerPrice} />
 
       <View style={styles.quantidade}>
         <InputSpinner
-          max={20}
+          max={10}
           min={1}
           step={1}
           colorMax={"#f04048"}
           colorMin={"#40c5f4"}
           skin={"modern"}
-          onChange={(num) => {
-            console.log(num);
+          onChange={(num: number) => {
+            setValue(num)
           }}
         />
       </View>

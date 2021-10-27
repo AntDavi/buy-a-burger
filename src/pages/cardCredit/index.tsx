@@ -43,7 +43,7 @@ const cardCredit: React.FC = () => {
             horizontalStart
             overrides={{
               labelText: {
-                marginTop: 20,
+                marginTop: 16,
               },
             }}
             // those are the default values
@@ -89,6 +89,9 @@ const styles = StyleSheet.create({
     margin: 36,
     marginTop: 0,
   },
+  cardPreview: {
+    fontSize: 16
+  }
 })
 
 export default cardCredit;

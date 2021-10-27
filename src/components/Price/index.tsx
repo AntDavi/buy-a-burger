@@ -3,14 +3,14 @@ import { Text, View } from 'react-native';
 import { styles } from './styles';
 
 type Props = {
-    price: string;
+    priceHam: number;
 }
 
-export function Price({ price } : Props) {
+export function Price({ priceHam } : Props) {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>
-          { price }
+          R$ { priceHam.toFixed(2)}
       </Text>
     </View>
   );

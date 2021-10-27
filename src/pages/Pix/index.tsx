@@ -12,7 +12,6 @@ export default function App() {
     Alert.alert('A chave foi copiada, use para pagar no seu banco!')
   };
 
-
   return (
     <View style={styles.container}>
       <Text style={styles.title}>
