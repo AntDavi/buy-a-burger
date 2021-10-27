@@ -5,17 +5,16 @@ const styles = StyleSheet.create({
       backgroundColor: '#124D9E',
       alignItems: 'center',
       justifyContent: 'center',
-      paddingVertical: 8,
+      paddingVertical: 30,
       paddingHorizontal: 30,
       borderRadius: 20,
-      borderWidth: 2,
-      borderColor: '#fff',
-      marginTop: -30
+      width: 200,
+      height: 200
     },
-    text: {
-      fontSize: 30,
+    title: {
+      fontSize: 20,
       color: '#fff',
-      fontFamily: 'RobotoMono_400Regular'
+      fontFamily: 'RobotoMono_700Bold'
     }
 });
 

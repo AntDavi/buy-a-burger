@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#124D9E',
       alignItems: 'center',
       justifyContent: 'center',
-      paddingVertical: 8,
+      paddingVertical: 14,
       paddingHorizontal: 30,
       borderRadius: 20,
       width: 300,
@@ -13,7 +13,8 @@ const styles = StyleSheet.create({
     },
     title: {
       fontSize: 20,
-      color: '#fff'
+      color: '#fff',
+      fontFamily: 'RobotoMono_700Bold'
     }
 });
 

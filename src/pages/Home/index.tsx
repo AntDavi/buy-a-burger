@@ -9,8 +9,16 @@ import { Button } from '../../components/Button'
 import Burger from '../../assets/image/Burger.png'
 
 import { styles } from './styles';
+import { useNavigation } from '@react-navigation/core';
 
 export default function Home() {
+  const navigation = useNavigation();
+
+  function handlePay() {
+    navigation.navigate('Payment');
+  }
+
+
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
@@ -32,7 +40,10 @@ export default function Home() {
         />
       </View>
 
-      <Button title="Comprar"/>
+      <Button 
+        title="Comprar"
+        onPress={handlePay}
+      />
 
     </View>
   );
