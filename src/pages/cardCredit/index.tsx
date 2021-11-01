@@ -50,7 +50,7 @@ const cardCredit: React.FC = () => {
             translations={{
               cardNumber: 'Número do Cartão',
               cardHolderName: 'Nome do cartão',
-              nameSurname: 'Name Surname',
+              nameSurname: 'Nome sobrenome',
               mmYY: 'MM/YY',
               expiration: 'Validade',
               securityCode: 'CVV',
@@ -68,7 +68,7 @@ const cardCredit: React.FC = () => {
         {formState.isValid && (
           <Button
             style={styles.button}
-            title={'CONFIRM PAYMENT'}
+            title={'Confirmar Pagamento'}
             onPress={handleSubmit(onSubmit)}
           />
         )}
